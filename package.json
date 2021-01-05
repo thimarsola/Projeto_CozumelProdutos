@@ -1,0 +1,19 @@
+{
+  "name": "cozumel",
+  "version": "1.0.0",
+  "description": "Theme develop by Goognet Solução Digital Agency for the company Cozumel Estética",
+  "main": "index.js",
+  "scripts": {
+    "start": "sass ./_cdn/scss/:./_cdn/css/ --watch --style=compressed"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thimarsola/Projeto_CozumelProdutos.git"
+  },
+  "author": "Thiago Marsola | Goognet Solução Digital",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/thimarsola/Projeto_CozumelProdutos/issues"
+  },
+  "homepage": "https://github.com/thimarsola/Projeto_CozumelProdutos#readme"
+}

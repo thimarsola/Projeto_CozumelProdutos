@@ -1,0 +1,131 @@
+// ==========================================================================
+// Variables
+// ==========================================================================
+
+:root {
+    @each $name, $color in $theme-colors {
+        --color-#{$name}: #{$color};
+    }
+    @each $name, $color in $background-colors {
+        --color-#{$name}: #{$color};
+    }
+}
+// ==========================================================================
+// Root
+// ==========================================================================
+
+* {
+    padding        : 0;
+    margin         : 0;
+    outline        : 0;
+    box-sizing     : border-box;
+    text-decoration: none !important;
+}
+
+html {
+    height     : 100vh;
+    font       : {
+        // cada 1rem equivale a 10px
+        size  : 62.5%;
+        family: 'Roboto Light', sans-serif !important;
+    }
+    line-height: 1.5;
+
+    body {
+        width: 100%;
+        height: 100%;
+        font  : {
+            size: 1.6rem;
+        }
+        color : var(--color-theme-text);
+    }
+
+    a,
+    address,
+    span,
+    strong {
+        font : {
+            style : inherit !important;
+            weight: inherit;
+            size  : inherit;
+        }
+        color: inherit;
+    }
+
+    img {
+        display: block;
+    }
+
+    ul {
+        list-style         : none;
+        list-style-position: inside;
+    }
+
+    h1,
+    h2,
+    h3 {
+        font: {
+            size  : inherit;
+            family: 'Dancing Script Bold', cursive !important;
+        }
+    }
+
+    header{
+        width: 100%;
+    }
+
+    button{
+        background: none;
+    }
+}
+
+.d-none{
+    display: none !important;
+}
+
+/*includes*/
+@mixin margin {
+    margin : 0;
+    padding: 10rem 0;
+}
+@mixin marginSet {
+    margin : 0;
+    padding: 0;
+}
+/*end of includes*/
+
+/*Container*/
+.container {
+    display: block;
+    margin : 0 auto;
+    padding: 0 3.2rem;
+    width  : 100%;
+}
+@media (min-width: 576px) {
+    .container {
+        margin   : 0 auto;
+        padding  : 0 1.6rem;
+        max-width: 540px;
+    }
+}
+@media (min-width: 768px) {
+    .container {
+        margin   : 0 auto;
+        padding  : 0 1.6rem;
+        max-width: 720px;
+    }
+}
+@media (min-width: 992px) {
+    .container {
+        margin   : 0 auto;
+        padding  : 0 1.6rem;
+        max-width: 960px;
+    }
+}
+@media (min-width: 1200px) {
+    .container {
+        margin   : 0 auto;
+        padding  : 0 1.6rem;
+        max-width: 1140px;
+    }
+}

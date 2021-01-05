@@ -1,0 +1,83 @@
+// ==========================================================================
+// Buttons
+// ==========================================================================
+
+.btn {
+    display: inline-block !important;
+    margin: 0;
+    padding: 1rem 3.8rem;
+    border-radius: 3px;
+    cursor: pointer;
+    vertical-align: middle;
+    outline: none;
+    border: none;
+    transform: scale(1);
+    transition: transform 0.3s ease-in-out;
+    font:{
+        family: 'Roboto Light', serif !important;
+        size: 1.6rem;
+    }
+
+    &:active {
+        transform : scale(1.1);
+        transition: transform 0.3s ease-in-out;
+    }
+}
+
+@each $color, $value in $theme-colors {
+    @if $color==theme-white {
+        .btn--#{$color} {
+            background-color: $value;
+            color: var(--color-theme-primary);
+            transition: 0.3s ease-in-out all;
+
+            &:hover {
+                background-color: darken($value, 15%);
+                transition: 0.3s ease-in-out all;
+            }
+        }
+    } @else {
+        .btn--#{$color} {
+            background-color: $value;
+            color: var(--color-theme-white);
+            transition: background-color 0.5s ease-in-out;
+
+
+            &:hover {
+                background-color: darken($value, 10%);
+                transition: background-color 0.5s ease-in-out;
+            }
+        }
+    }
+}
+
+@each $color, $value in $theme-colors {
+    @if $color==theme-white {
+        .btn--outline-#{$color} {
+            border: 1.5px solid $value !important;
+            border-radius: 5rem;
+            color: $value;
+            transition: 0.3s ease-in-out all;
+
+            &:hover {
+                background-color: var(--color-theme-white);
+                border: 1.5px solid var(--color-theme-primary) !important;
+                color: var(--color-theme-primary);
+                transition: 0.3s ease-in-out all;
+            }
+        }
+    } @else {
+        .btn--outline-#{$color} {
+            border: 1.5px solid $value !important;
+            color: $value;
+            transition: background-color 0.3s ease-in-out;
+
+
+            &:hover {
+                background-color: darken($value, 10%);
+                color: var(--color-theme-white);
+                transition: background-color 0.3s ease-in-out;
+            }
+        }
+    }
+}
