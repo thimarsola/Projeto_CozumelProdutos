@@ -156,7 +156,7 @@ $title = "Cozumel Estética e Bem-estar";
                     <div class="category__body">
                         <!--header-->
                         <header class="category__body__header">
-                            <h1>Nossas Categorias</h1
+                            <h1>Nossas Categorias</h1>
                         </header>
                         <!--end of header-->
 
