@@ -128,3 +128,74 @@ $title = "Cozumel Estética e Bem-estar";
             <!--end of navbar-->
         </header>
         <!--end of header-->
+
+        <!--hero-->
+        <section class="hero">
+
+            <header class="hero__header">
+                <?php
+                if (is_home()) {
+                    echo "<h1>Linha de <br><span>Produtos Cozumel</span></h1>";
+                } else {
+                    echo "<h1>Linha <br><span>" . get_the_title() . "</span></h1>";
+                }
+                ?>
+            </header>
+
+        </section>
+        <!--end of hero-->
+
+        <!--main-->
+        <main>
+            <!--category-->
+            <section class="category">
+
+                <div class="container">
+
+                    <!--container-->
+                    <div class="category__body">
+                        <!--header-->
+                        <header class="category__body__header">
+                            <h1>Nossas Categorias</h1>
+                        </header>
+                        <!--end of header-->
+
+                        <!--content-->
+                        <div class="category__body__content">
+
+                            <!--container-->
+                            <div class="category__body__content__container">
+
+                                <!--link-->
+                                <div class="category__body__content__container__link">
+                                    <img src="<?= get_template_directory_uri(); ?>/_cdn/img/vt-facial.svg" alt="Categoria de Produtos Facial Cozumel" loading='lazy'/>
+                                    <a href="<?= get_permalink(get_page_by_title('Facial')); ?>" target="_blank">Facial</a>
+                                </div>
+                                <!--end of link-->
+
+                                <!--link-->
+                                <div class="category__body__content__container__link">
+                                    <img src="<?= get_template_directory_uri(); ?>/_cdn/img/vt-corporal.svg" alt="Categoria de Produtos Corporal Cozumel" loading='lazy'/>
+                                    <a href="<?= get_permalink(get_page_by_title('Corporal')); ?>" target="_blank">Corporal</a>
+                                </div>
+                                <!--end of link-->
+
+                                <!--link-->
+                                <div class="category__body__content__container__link">
+                                    <img src="<?= get_template_directory_uri(); ?>/_cdn/img/vt-maos-e-pes.svg" alt="Categoria de Produtos Mãos e Pés Cozumel" loading='lazy'/>
+                                    <a href="<?= get_permalink(get_page_by_title('Mãos e Pés')); ?>" target="_blank">Mãos e Pés</a>
+                                </div>
+                                <!--end of link-->
+                            </div>
+                            <!--end of container-->
+
+                        </div>
+                        <!--end of content-->
+                    </div>
+                    <!--end of container-->
+
+                </div>
+
+            </section>
+            <!--end of category-->
+

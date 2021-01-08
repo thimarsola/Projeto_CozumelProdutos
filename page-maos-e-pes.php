@@ -1,4 +1,4 @@
-<?php get_header(); ?>
+<?php get_header('products'); ?>
 
 <!--main-->
 
@@ -55,4 +55,4 @@
 
 <!--end of main-->
 
-<?php get_footer(); ?>
+<?php get_footer('products'); ?>

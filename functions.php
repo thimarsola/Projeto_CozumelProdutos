@@ -6,7 +6,9 @@ function loadScripts()
 //    css
     if (is_404()) {
         wp_enqueue_style('styleError', get_template_directory_uri() . '/_cdn/css/styleError.css', [], '1.0.0', 'all');
-    } else {
+    } elseif (is_home()) {
+        wp_enqueue_style('stylesheet', get_template_directory_uri() . '/_cdn/css/home.css', [], '1.0.0', 'all');
+    } elseif(is_page(['corporal', 'facial', 'maos-e-pes', 'produto'])) {
         wp_enqueue_style('stylesheet', get_template_directory_uri() . '/_cdn/css/styles.css', [], '1.0.0', 'all');
     }
 

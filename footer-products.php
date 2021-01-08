@@ -1,3 +1,4 @@
+</main>
 <!--end of main-->
 <footer class="footer">
     <hr>

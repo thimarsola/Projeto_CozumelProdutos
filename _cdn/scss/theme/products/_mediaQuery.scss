@@ -113,13 +113,8 @@
 
                         .sub-menu{
                             position: relative !important;
-                            padding: 3rem !important;
                             li{
                                 padding: 1.8rem 0 !important;
-
-                                &:not(:first-child){
-                                    border-top: 1px solid rgba(0, 0, 0, 0.1);
-                                }
 
                                 a{
                                     color: var(--color-theme-primary) !important;
