@@ -19,7 +19,7 @@
         <!--end of header-->
 
         <!--text-->
-        <div class="treatments__content__card__text">
+        <div class="treatments__content__card__body__text">
             <p><?php the_field('body_treatments_description'); ?></p>
         </div>
         <!--end of text-->
@@ -29,7 +29,7 @@
         ?>
         
         <!--recommendation-->
-        <div class="treatments__content__card__recommendation">
+        <div class="treatments__content__card__body__recommendation">
             <p><?php the_field('body_treatments_recommendation'); ?></p>
         </div>
         <!--end of recommendation-->

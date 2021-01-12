@@ -1,0 +1,33 @@
+.nailPolish{
+    @include margin;
+
+    &__header{
+        margin-bottom: 3.2rem;
+    }
+    
+    &__content{
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        
+        &__text{
+            flex-basis: calc(60% - 1.5rem);
+            margin-right: 1.5rem;
+            
+            p{
+                text:{
+                    align: justify;
+                }
+            }
+        }
+        
+        &__image{
+            flex-basis: calc(40% - 1.5rem);
+            margin-left: 1.5rem;
+            
+            img{
+                width: 100%;
+            }
+        }
+    }
+}

@@ -8,4 +8,6 @@ $theme-colors: map_merge(('theme-primary': #00C5FF,
     ), $theme-colors);
 
 $background-colors : ('background-gray': #F0F0F0,
+'background-gray-light': #F8F8F8,
+'background-blue': lighten(#00C5FF, 45%)
 );

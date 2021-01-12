@@ -11,7 +11,7 @@
     <div class="massage__content__card__body">
 
         <!--text-->
-        <div class="massage__content__card__text">
+        <div class="massage__content__card__body__text">
             <p><?php the_field('massage_description'); ?></p>
             
             <?php
@@ -19,7 +19,7 @@
                 ?>
 
                 <!--recommendation-->
-                <div class="massage__content__card__text__recommendation">
+                <div class="massage__content__card__body__text__recommendation">
                     <p><?php the_field('massage_recommendation'); ?></p>
                 </div>
                 <!--end of recommendation-->

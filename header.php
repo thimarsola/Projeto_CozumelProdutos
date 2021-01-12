@@ -91,6 +91,9 @@ $title = "Cozumel Estética e Bem-estar";
 
         <!--TITLE-->
         <title><?= $title; ?></title>
+        
+        <!--recptcha-->
+        <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 
         <?php wp_head(); ?>
     </head>

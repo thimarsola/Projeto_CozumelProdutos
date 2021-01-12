@@ -1,0 +1,114 @@
+%cardTreatments{
+    .treatments__content__card{
+        @include marginSet;
+        background: var(--color-theme-white);
+        box-shadow: 0 0 10px rgba(#333, .3);
+
+        &__body{
+            padding: 3.2rem;
+
+            &__header{
+                margin-bottom: 2.2rem;
+
+                h2{
+                    @include marginSet;
+                    font:{
+                        family: 'Roboto Light', sans-serif !important;
+                        size: 2.4rem;
+                    }
+                    line-height: 1.25;
+                }
+            }
+
+            p{
+                @include marginSet;
+                font:{
+                    size: 1.4rem;
+                }
+                text:{
+                    align: justify;
+                }
+            }
+
+            &__recommendation{
+                margin-top: 1.6rem;
+            }
+        }
+    }
+}
+
+%massageCard{
+    .massage__content__card{
+        margin: 0;
+        padding: 3.8rem 0;
+        &:not(:last-child){
+            border-bottom: 1px solid rgba(0,0,0,0.1);
+        }
+
+        &:nth-child(odd){
+            .massage__content__card__body{
+                &__text{
+                    margin-right: 1.5rem;
+                }
+
+                &__image{
+                    margin-left: 1.5rem;
+                }
+            }
+        }
+
+        &:nth-child(even){
+            .massage__content__card__body{
+                &__text{
+                    margin-left: 1.5rem;
+                }
+
+                &__image{
+                    margin-right: 1.5rem;
+                    order: -1;
+                }
+            }
+        }
+
+        &__header{
+
+            h2{
+                @include marginSet;
+                font:{
+                    family: 'Roboto Light', sans-serif !important;
+                    size: 2.8rem;
+                }
+            }
+        }
+
+        &__body{
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: wrap;
+
+            &__text{
+                flex-basis: calc(60% - 1.5rem);
+
+                p{
+                    text:{
+                        align: justify;
+                    }
+                }
+
+                &__recommendation{
+                    margin-top: 2.2rem;
+                }
+            }
+
+            &__image{
+                flex-basis: calc(40% - 1.5rem);
+
+                img{
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,71 @@
+.hero{
+    @include marginSet;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    background:{
+        image: url('../img/bg-home.jpg');
+        color: rgba(0,0,0,.2);
+        blend-mode: multiply;
+        position: center;
+        size: cover;
+        attachment: fixed;
+        repeat: no-repeat;
+    }
+
+    &::after{
+        @include marginSet;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        content: url('../img/vt-home.svg');
+        display: block;
+        width: 100%;
+        height: 11rem;
+    }
+
+    .container{
+        height: 100%;
+        display: flex;
+        align-items: center;
+    }
+
+    &__header{
+        @include marginSet;
+
+        h1{
+            @include marginSet;
+            display: block;
+            font:{
+                family: 'Roboto Light', sans-serif !important;
+                size: 5.5rem;
+            }
+            line-height: 1;
+            text:{
+                shadow: 0 .3rem .8rem rgba(0,0,0,.5);
+            }
+            color: var(--color-theme-white);
+            
+            &::before{
+                display: none;
+            }
+            
+            small{
+                font:{
+                    size: 3rem;
+                }
+            }
+
+            span{
+                font:{
+                    family: 'Dancing Script Bold', cursive !important;
+                    size: 8.4rem;
+                }
+            }
+            
+        }
+    }
+
+}

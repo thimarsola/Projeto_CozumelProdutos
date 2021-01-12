@@ -1,0 +1,48 @@
+.company{
+    @include margin;
+    background:{
+        image: url('../img/bg-eventos.png');
+        position: center;
+        size: cover;
+    }
+
+    &__content{
+        margin: 0 auto;
+        max-width: 95rem;
+        padding: 5rem;
+        background:{
+            color: rgba(255, 255, 255, .85);
+        }
+        backdrop-filter: blur(10px);
+
+        &__container{
+            padding: 5rem;
+            border: 2px solid rgba(0,0,0, .1);
+            
+            &__header{
+                margin-bottom: 3.2rem;
+                
+                h1{
+                    @include marginSet;
+                    display: block;
+                    font:{
+                        size: 3.2rem;
+                    }
+                    color: var(--color-theme-primary);
+                    
+                    &::before{
+                        display: none;
+                    }
+                }
+            }
+            
+            &__text{
+                p{
+                    text:{
+                        align: justify;
+                    }
+                }
+            }
+        }
+    }
+}

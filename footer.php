@@ -9,13 +9,26 @@
 
     <!--copyright-->
     <div class="footer__copyright">
-        <p><small>&COPY; Todos os direitos reservados &CenterDot; Cozumel Estética &CenterDot; <?= date("Y"); ?></small></p>
+        <p><small>Cozumel Estética &CenterDot; &COPY; COPYRIGHT <?= date("Y"); ?> &CenterDot; Todos os direitos reservados</small></p>
     </div>
     <!--end of copyright-->
 
     <!--developer-->
     <div class="footer__developer">
-        <p><small>Desenvolvido por <strong><a href="https://goognet.com.br" target="_blank">Goognet Solução Digital</a></strong></small></p>
+        <div class="container">
+            <p><small>Desenvolvido por <strong><a href="https://goognet.com.br" target="_blank" title="Especializados em Marketing Digital">Goognet Solução Digital</a></strong></small></p>
+
+            <?php
+            $protocols = array('http://', 'http://www.', 'www.');
+            $urlBase = str_replace($protocols, '', get_bloginfo('wpurl'));
+            ?>
+
+            <!--validator-->
+            <div class="footer__developer__validator">
+                <a href="https://validator.w3.org/nu/?showsource=yes&showoutline=yes&showimagereport=yes&doc=https%3A%2F%2F<?= $urlBase ?>%2F" target="_blank" title="Tecnologia W3C"><img src="<?php echo get_template_directory_uri(); ?>/_cdn/img/vt-html.svg" alt="Vetor W3C Validator">W3C Validator</a>
+            </div>
+            <!--end of validator;-->
+        </div>
     </div>
     <!--end of developer-->
 </footer>

@@ -1,0 +1,48 @@
+.medicalArea{
+    @include margin;
+
+    &__header{
+        margin-bottom: 3.2rem;
+    }
+
+    &__content{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+
+        &__text{
+            flex-basis: calc(60% - 1.5rem);
+            margin-right: 1.5rem;
+            
+            p{
+                text:{
+                    align: justify;
+                }
+            }
+            
+            ul{
+                margin: 1.8rem 0;
+                box-sizing: content-box !important;
+                list-style-position: inside !important;
+                list-style: square;
+                
+                li{
+                    img{
+                        @include marginSet;
+                        display: inline-block;
+                        align-content: center;
+                    }
+                }
+            }
+        }
+        
+        &__image{
+            flex-basis: calc(40% - 1.5rem);
+            margin-left: 1.5rem;
+            img{
+                width: 100%;
+            }
+        }
+    }
+}

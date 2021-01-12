@@ -1,0 +1,99 @@
+.units{
+    margin: 0;
+    padding-bottom: 10rem;
+
+    &::before{
+        display: block;
+        width: 100%;
+        height: 40rem;
+        content: '';
+        background:{
+            image: url('../img/bg-unidades.jpg');
+            position: center;
+            size: cover;
+        }
+    }
+
+    &__header{
+        margin: 0 auto;
+        padding: 3.2rem;
+        max-width: 70rem;
+        height: 100%;
+        background:{
+            color: var(--color-theme-primary);
+        }
+        border-radius: 1.5rem 1.5rem 0 0;
+        transform: translateY(-50%);
+
+        h1{
+            @include marginSet;
+            display: block;
+            font:{
+                family: 'Roboto Light', sans-serif !important;
+                size: 4.8rem;
+            }
+            text:{
+                align: center
+            }
+            color: var(--color-theme-white);
+
+            &::before{
+                display: none;
+            }
+        }
+    }
+
+    &__content{
+        width: 100%;
+        display: flex;
+        /*justify-content: space-around;*/
+        flex-wrap: wrap;
+
+        &__card{
+            flex-basis: calc(33.3333% - 3rem);
+            margin: 1.5rem;
+            background:{
+                color: var(--color-theme-white);
+            }
+            box-shadow: 0 0 10px rgba(#333, .15);
+            border-radius: 1rem;
+
+            &__image{
+                width: 100%;
+                padding: 1.6rem;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-bottom: 3px solid var(--color-theme-primary);
+            }
+
+            &__body{
+                margin: 0;
+                padding: 3.2rem;
+                text:{
+                    align: center;
+                }
+
+                &__header{
+                    margin-bottom: 1.8rem;
+                    
+                    h2{
+                        font:{
+                            family: 'Roboto Light', sans-serif !important;
+                            size: 2rem;
+                        }
+                        color: var(--color-theme-primary);
+                    }
+                }
+                
+                &__text{
+                    margin-bottom: 1.8rem;
+                    font:{
+                        size: 1.4rem;
+                    }
+                }
+
+            }
+        }
+    }
+}
