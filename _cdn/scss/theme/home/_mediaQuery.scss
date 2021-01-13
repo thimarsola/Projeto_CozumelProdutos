@@ -257,18 +257,6 @@
 
 @media screen and (max-width: 480px){
 
-    /*hero*/
-    .hero{
-        &::after{
-            background:{
-                size: cover;
-                position: left bottom;
-                repeat: no-repeat;
-            }
-        }
-    }
-    /*end of hero*/
-
     /*clinic and nail polish*/
     .clinic, .nailPolish, .medicalArea{
         &__content{
@@ -408,7 +396,7 @@
         &::before{
             height: 25rem;
         }
-        
+
         &__content{
             justify-content: center;
 
@@ -494,14 +482,14 @@
 
     /*body massage*/
     .bodyMassage{
-        
+
         &::after{
             height: 20rem;
             background:{
                 position: 42% center;
             }
         }
-        
+
     }
     /*end of body massage*/
 }

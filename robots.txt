@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+Sitemap: http://www.cozumelestética.com.br/robots.txt
+Sitemap: http://www.cozumelestética.com.br/sitemap.xml

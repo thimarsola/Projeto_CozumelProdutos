@@ -1,5 +1,5 @@
 <?php
-$phone = '';
+$phone = '934961130';
 ?>
 
 <!--product-->
