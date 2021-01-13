@@ -1,4 +1,4 @@
-<?php get_header(); ?>
+<?php get_header('products'); ?>
 
 <!--main-->
 <a href="../../../../Projeto-Emofer/wp-content/themes/Theme_Emofer/_cdn/scss/_servicesPage.scss"></a>

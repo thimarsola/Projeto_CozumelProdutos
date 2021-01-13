@@ -34,6 +34,7 @@
         .container{
             display: flex;
             justify-content: space-around;
+            flex-wrap: wrap;
         }
 
         a{
@@ -53,6 +54,7 @@
         &__validator{
             a{
                 display: flex;
+                align-items: center;
 
                 img{
                     margin-right: 1rem;

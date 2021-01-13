@@ -14,13 +14,12 @@ menuToggle.addEventListener("click", () => {
 });
 
 
-//
-//menuItem.forEach((item) => {
-//    item.addEventListener('click', () => {
-//        menuSection.classList.toggle('header__navbar--open');
-//        document.body.style.overflow = "initial";
-//    });
-//});
+menuItem.forEach((item) => {
+    item.addEventListener('click', () => {
+        menuSection.classList.toggle('header__navbar--open');
+        document.body.style.overflow = "initial";
+    });
+});
 
 //menu dropdown
 let showDropdown = true;

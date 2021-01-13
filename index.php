@@ -510,7 +510,7 @@
             <div class="contact__content__form">
                 <p>Entre em contato para sanar suas dúvidas, enviar sugestões e solicitar atendimento. Teremos o maior prazer em lhe responder o mais breve possível.</p>
 
-                <form action="<?= get_template_directory_uri(); ?>/_cdn/php/send.php" method="POST">
+                <form id="form" action="<?= get_template_directory_uri(); ?>/_cdn/php/sender.php" method="POST" enctype="multipart/form-data">
                     <input name="name" type="text" placeholder="Nome Completo*" required>
                     <input name="mail" type="email" placeholder="E-mail*" required>
                     <input name="phone" type="text" placeholder="DDD + Telefone">
@@ -531,12 +531,6 @@
                     <!--end of submit-->
 
                 </form>
-
-                <!--loading-->
-                <div class="d-none contact__content__status--loading">
-                    <img src="<?= get_template_directory_uri(); ?>/_cdn/img/vt-spinner.svg" alt="Loading">
-                </div>
-                <!--end of loading-->
             </div>
             <!--end of form-->
 

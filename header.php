@@ -108,7 +108,7 @@ $title = "Cozumel Estética e Bem-estar";
                 <!--container-->
                 <div class="container">
                     <!-- brand -->
-                    <a href="https://cozumelestetica.com.br">
+                    <a href="<?= get_home_url(); ?>">
                         <img src="<?= get_template_directory_uri(); ?>/_cdn/img/logo-header.svg" alt="Logo Cozumel Estética e Bem-estar" loading='lazy'>
                     </a>
 
@@ -121,7 +121,7 @@ $title = "Cozumel Estética e Bem-estar";
                         </div>
                         <!-- nav -->
                         <nav class="header__navbar__section__nav">
-                            <?php wp_nav_menu(array('theme_location' => 'header-menu', 'container_class' => '')); ?>
+                            <?php wp_nav_menu(array('theme_location' => 'header-home', 'container_class' => '')); ?>
                             <a href="https://cozumelestetica.com.br/franquia" class="btn btn--outline-theme-white" target="_blank">Seja um Franqueado</a>
                         </nav>
                     </div>

@@ -15,5 +15,10 @@
   "bugs": {
     "url": "https://github.com/thimarsola/Projeto_CozumelProdutos/issues"
   },
-  "homepage": "https://github.com/thimarsola/Projeto_CozumelProdutos#readme"
+  "homepage": "https://github.com/thimarsola/Projeto_CozumelProdutos#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-imagemin": "^7.1.0",
+    "sweetalert2": "^10.13.0"
+  }
 }

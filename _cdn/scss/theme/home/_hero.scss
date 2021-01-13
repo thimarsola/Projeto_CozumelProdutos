@@ -1,29 +1,37 @@
 .hero{
-    @include marginSet;
-    width: 100%;
-    height: 100vh;
+    display: block;
     position: relative;
     bottom: 0;
     left: 0;
+    margin: 0 !important;
+    padding: 0 !important;
+    width: 100%;
+    height: 100vh !important;
     background:{
         image: url('../img/bg-home.jpg');
         color: rgba(0,0,0,.2);
         blend-mode: multiply;
-        position: center;
+        position: center bottom;
         size: cover;
         attachment: fixed;
         repeat: no-repeat;
     }
 
     &::after{
-        @include marginSet;
         position: absolute;
         left: 0;
-        bottom: 0;
-        content: url('../img/vt-home.svg');
-        display: block;
+        bottom: -1px;
         width: 100%;
-        height: 11rem;
+        height: 12.5rem;
+        margin: 0 !important;
+        display: block;
+        content: '';
+        background:{
+            image: url('../img/vt-home.svg');
+            size: contain;
+            position: center bottom;
+            repeat: no-repeat;
+        }
     }
 
     .container{
@@ -47,11 +55,11 @@
                 shadow: 0 .3rem .8rem rgba(0,0,0,.5);
             }
             color: var(--color-theme-white);
-            
+
             &::before{
                 display: none;
             }
-            
+
             small{
                 font:{
                     size: 3rem;
@@ -64,7 +72,7 @@
                     size: 8.4rem;
                 }
             }
-            
+
         }
     }
 

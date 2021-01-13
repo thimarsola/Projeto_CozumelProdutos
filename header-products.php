@@ -105,7 +105,7 @@ $title = "Cozumel Estética e Bem-estar";
                 <!--container-->
                 <div class="container">
                     <!-- brand -->
-                    <a href="https://cozumelestetica.com.br">
+                    <a href="<?= get_home_url(); ?>">
                         <img src="<?= get_template_directory_uri(); ?>/_cdn/img/logo-header.svg" alt="Logo Cozumel Estética e Bem-estar" loading='lazy'>
                     </a>
 

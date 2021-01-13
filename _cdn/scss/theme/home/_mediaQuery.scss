@@ -1,0 +1,507 @@
+@media screen and (max-width: 1024px){
+    html {
+        font-size: 50% !important;
+    }
+
+    /*header*/
+    .header{
+        &__navbar{
+            .container{
+                justify-content: center;
+            }
+        }
+    }
+    /*end of header*/
+
+    /*footer*/
+    .footer{
+        &__logo{
+            img{
+                height: 8rem;
+            }
+        }
+    }
+    /*end of footer*/
+
+}
+
+@media screen and (max-width: 900px){
+
+    /*units*/
+    .units{
+        &__content{
+            justify-content: space-around;
+
+            &__card{
+                flex-basis: calc(50% - 3rem);
+            }
+        }
+    }
+    /*end of units*/
+
+}
+
+@media screen and (max-width: 768px){
+
+
+    /*header*/
+    .header {
+        &__navbar {
+            .container{
+                justify-content: space-between;
+            }
+
+            img{
+                height: 5rem;
+            }
+
+            &__section {
+
+                &__toggle {
+                    margin: 0;
+                    padding: 0;
+                    width: 32px;
+                    height: 32px;
+
+                    &__bar {
+                        background-color: var(--color-theme-white);
+                        height: 3px;
+                        width: 100%;
+                        margin: 6px auto;
+                        transition-duration: .3s;
+                    }
+                }
+
+                &__nav {
+                    display: none !important;
+
+                    ul{
+                        margin-right: 0 !important;
+                        width: 100% !important;
+                    }
+                }
+            }
+
+            &--open {
+                position: absolute;
+                top: 0;
+                left: 0;
+
+                width: 100vw;
+                height: 100vh;
+
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                background-color: rgba(#00C5FF, .95);
+                backdrop-filter: blur(10px);
+                -webkit-backdrop-filter: blur(10px);
+
+                overflow: scroll;
+
+                .header__navbar__section__nav {
+                    display: block !important;
+                }
+
+                .header__navbar__section__toggle {
+                    position: absolute;
+                    top: 18px;
+                    right: 35px;
+
+
+                    &>.header__navbar__section__toggle__bar:nth-child(1) {
+                        transform: rotate(45deg) translate(9px, 9px);
+                        transition: .3s ease-in-out all;
+                    }
+
+                    &>.header__navbar__section__toggle__bar:nth-child(2) {
+                        opacity: 0;
+                        transition: .3s ease-in-out all;
+                    }
+
+                    &>.header__navbar__section__toggle__bar:nth-child(3) {
+                        transform: rotate(-45deg) translate(4px, -4px);
+                        transition: .3s ease-in-out all;
+                    }
+
+                    .header__navbar__section__toggle__bar {
+                        background-color: var(--color-theme-white);
+                        transition: .3s ease-in-out all;
+                    }
+                }
+
+                .header__navbar__section__nav {
+                    width: 100% !important;
+                    padding: 3.2rem 0;
+                    text:{
+                        align: center;
+                    }
+
+                    ul {
+                        flex-direction: column;
+                        flex-wrap: wrap;
+                    }
+
+                    .menu-item-has-children{
+                        transition: all .3s ease-in-out !important;
+
+                        &--active{
+                            flex-direction: column;
+                            transition: all .3s ease-in-out !important;
+
+                            .sub-menu{
+                                margin-top: 1.6rem;
+                            }
+                        }
+
+                        .sub-menu{
+                            position: relative !important;
+                            li{
+                                padding: 1.8rem 0 !important;
+
+                                a{
+                                    color: var(--color-theme-primary) !important;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    /*end of header*/
+
+}
+
+@media screen and (max-width: 720px){
+
+    /*clinic and nail polish*/
+    .clinic, .nailPolish{
+        &__content{
+            &__text{
+                flex-basis: calc(50% - 1.5rem);
+            }
+
+            &__image{
+                flex-basis: calc(50% - 1.5rem);
+            }
+        }
+    }
+    /*end of clinic and nail polish*/
+
+    /*body and facial massage*/
+    .bodyMassage, .facialMassage{
+        &__content{
+            .massage__content__card{
+                &__header{
+
+                    text:{
+                        align: center;
+                    }
+
+                }
+
+                &__body{
+                    &__text{
+                        flex-basis: calc(50% - 1.5rem);
+                    }
+
+                    &__image{
+                        flex-basis: calc(50% - 1.5rem);
+                    }
+                }
+            }
+        }
+    }
+    /*end of body and facial massage*/
+
+    /*body and facial treatments*/
+    .bodyTreatments, .facialTreatments{
+        &__content{
+            grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+        }
+    }
+    /*end of body and facial treatments*/
+
+    /*beautification gaze and depilation*/
+    .beautificationGaze, .depilation{
+        &__content{
+            &__services{
+                flex-basis: calc(50% - 1.5rem);
+            }
+
+            &__image{
+                flex-basis: calc(50% - 1.5rem);
+            }
+        }
+    }
+    /*end of beautification gaze and depilation*/
+
+    /*contact*/
+    .contact{
+        &__content{
+            &__form{
+                flex-basis: calc(50% - 1.5rem);
+                overflow: hidden; 
+            }
+
+            &__information{
+                flex-basis: calc(50% - 1.5rem);
+            }
+        }
+    }
+    /*end of contact*/
+
+}
+
+@media screen and (max-width: 480px){
+
+    /*hero*/
+    .hero{
+        &::after{
+            background:{
+                size: cover;
+                position: left bottom;
+                repeat: no-repeat;
+            }
+        }
+    }
+    /*end of hero*/
+
+    /*clinic and nail polish*/
+    .clinic, .nailPolish, .medicalArea{
+        &__content{
+            &__text{
+                flex-basis: 100%;
+                margin-right: 0;
+                margin-bottom: 3.2rem;
+            }
+
+            &__image{
+                flex-basis: 100%;
+                margin-left: 0;
+                height: 23rem;
+            }
+        }
+    }
+    /*end of clinic and nail polish*/
+
+    /*body and facial treatments*/
+    .bodyTreatments, .facialTreatments{
+        &__content{
+            .treatments__content__card{
+                display: flex;
+                flex-direction: row;
+
+                &__image{
+                    flex-basis: 40%;
+
+                    img{
+                        width: 100%;
+                        height: auto;
+                    }
+                }
+
+                &__body{
+                    flex-basis: 60%;
+                }
+            }
+        }
+    }
+    /*end of body and facial treatments*/
+
+    /*facial treatments*/
+    .facialTreatments{
+        &__content{
+            .treatments__content__card{
+                &__body{
+                    order: -1;
+                }
+            }
+        }
+    }
+    /*end of facial treatments*/
+
+    /*body and facial massage*/
+    .bodyMassage, .facialMassage{
+        &__content{
+            .massage__content__card{
+
+                &:nth-child(odd){
+                    .massage__content__card__body{
+                        &__text{
+                            margin-right: 0;
+                        }
+
+                        &__image{
+                            margin-left: 0;
+                        }
+                    }
+                }
+
+                &:nth-child(even){
+                    .massage__content__card__body{
+                        &__text{
+                            margin-left: 0;
+                            order: 1;
+                        }
+
+                        &__image{
+                            margin-right: 0;
+                            order: 0;
+                        }
+                    }
+                }
+
+                &__body{
+                    &__text{
+                        flex-basis: 100%;
+                    }
+
+                    &__image{
+                        flex-basis: 100%;
+                        height: 23rem;
+                        margin-bottom: 3.2rem;
+                        order: -1;
+                    }
+                }
+            }
+        }
+    }
+    /*end of body and facial massage*/
+
+    /*beautification gaze and depilation*/
+    .beautificationGaze, .depilation{
+        &__content{
+            justify-content: center;
+            &__services{
+                flex-basis: 100%;
+                margin-right: 0;
+                margin-left: 0;
+            }
+
+            &__image{
+                flex-basis: 100%;
+                margin-right: 0;
+                margin-left: 0;
+                margin-bottom: 3.2rem;
+                height: 23rem;
+                width: 100%;
+            }
+        }
+    }
+    /*end of beautification gaze and depilation*/
+
+    /*beautification gaze*/
+    .beautificationGaze{
+        &__content{
+            &__image{
+                display: none;
+            }
+        }
+    }
+    /*end of beautification gaze*/
+
+    /*units*/
+    .units{
+        &::before{
+            height: 25rem;
+        }
+        
+        &__content{
+            justify-content: center;
+
+            &__card{
+                flex-basis: 100%;
+                margin: 3rem 0;
+            }
+        }
+    }
+    /*end of units*/
+
+    /*contact*/
+    .contact{
+        &__content{
+            &__form{
+                flex-basis: 100%;
+                margin-right: 0;
+                overflow: auto; 
+            }
+
+            &__information{
+                flex-basis: 100%;
+                margin-left: 0;
+                padding-top: 10rem;
+
+                a{
+                    margin-bottom: 1.4rem;
+                }
+            }
+        }
+    }
+    /*end of contact*/
+}
+
+@media screen and (max-width: 425px){
+
+    /*company*/
+    .company{
+        &__content{
+            padding: 3rem;
+
+            &__container{
+                padding: 3rem;
+
+                &__header{
+                    h1{
+                        text:{
+                            align: center;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    /*end of company*/
+}
+
+@media screen and (max-width: 375px){
+
+    /*body and facial treatments*/
+    .bodyTreatments, .facialTreatments{
+        &__content{
+            .treatments__content__card{
+                display: block;
+
+                &__image{
+                    width: 100%;
+                    height: 23rem;
+
+                    img{
+                        width: auto;
+                        height: 100%;
+                    }
+                }
+
+                &__body{
+                    flex-basis: 60%;
+                }
+            }
+        }
+    }
+    /*end of body and facial treatments*/
+
+    /*body massage*/
+    .bodyMassage{
+        
+        &::after{
+            height: 20rem;
+            background:{
+                position: 42% center;
+            }
+        }
+        
+    }
+    /*end of body massage*/
+}
