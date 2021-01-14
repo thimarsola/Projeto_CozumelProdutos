@@ -26,25 +26,38 @@
     &__developer{
         margin: 0;
         padding: .8rem 0;
-        text:{
-            align: center;
-        }
         color: var(--color-theme-white);
         background:{
             color: var(--color-theme-primary);
         }
 
-        p{
+        .container{
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
 
-            a{
-                font:{
-                    family: 'Roboto Bold', sans-serif !important;
-                }
+        a{
+            font:{
+                family: 'Roboto Bold', sans-serif !important;
+                size: 1.4rem;
+            }
+            transition: color .3s ease-in-out;
+
+            &:hover{
+                color: darken(#00C5FF, 10%);        
                 transition: color .3s ease-in-out;
+            }
 
-                &:hover{
-                    color: darken(#00C5FF, 10%);        
-                    transition: color .3s ease-in-out;
+        }
+
+        &__validator{
+            a{
+                display: flex;
+                align-items: center;
+
+                img{
+                    margin-right: 1rem;
                 }
             }
         }

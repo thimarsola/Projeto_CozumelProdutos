@@ -1,3 +1,30 @@
+@media screen and (max-width: 1024px){
+    html {
+        font-size: 50% !important;
+    }
+
+    /*header*/
+    .header{
+        &__navbar{
+            .container{
+                justify-content: center;
+            }
+        }
+    }
+    /*end of header*/
+
+    /*footer*/
+    .footer{
+        &__logo{
+            img{
+                height: 8rem;
+            }
+        }
+    }
+    /*end of footer*/
+
+}
+
 @media screen and (max-width: 768px){
     html {
         font-size: 50% !important;

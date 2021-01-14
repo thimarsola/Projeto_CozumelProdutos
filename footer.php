@@ -1,3 +1,11 @@
+<?php
+
+if(!is_home()){
+    echo "</main>";
+}
+
+?>
+
 <!--end of main-->
 <footer class="footer">
     <hr>
@@ -20,7 +28,12 @@
 
             <?php
             $protocols = array('http://', 'http://www.', 'www.');
-            $urlBase = str_replace($protocols, '', get_bloginfo('wpurl'));
+
+            if (is_home()) {
+                $urlBase = str_replace($protocols, '', get_bloginfo('wpurl'));
+            } else {
+                $urlBase = str_replace($protocols, '', get_bloginfo('wpurl')) . '/' . (get_page_uri());
+            }
             ?>
 
             <!--validator-->

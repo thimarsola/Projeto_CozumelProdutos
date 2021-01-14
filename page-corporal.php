@@ -55,4 +55,4 @@
 
 <!--end of main-->
 
-<?php get_footer('products'); ?>
+<?php get_footer(); ?>
