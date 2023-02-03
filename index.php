@@ -37,7 +37,7 @@
 
             <!--image-->
             <div class="clinic__content__image">
-                <img src="<?= get_template_directory_uri(); ?>/_cdn/img/img-about.jpg" alt="Conheça a Clínica Cozumel Estética e Bem-estar" loading='lazy'/>
+                <img src="<?= get_template_directory_uri(); ?>/_cdn/img/img-about.jpg" alt="Conheça a Clínica Cozumel Estética e Bem-estar" loading='lazy' />
             </div>
             <!--end of image-->
 
@@ -71,7 +71,7 @@
 
             <!--image-->
             <div class="nailPolish__content__image">
-                <img src="<?= get_template_directory_uri(); ?>/_cdn/img/img-esmalteria.jpg" alt="Conheça a Esmalteria Cozumel Estética e Bem-estar"/>
+                <img src="<?= get_template_directory_uri(); ?>/_cdn/img/img-esmalteria.jpg" alt="Conheça a Esmalteria Cozumel Estética e Bem-estar" />
             </div>
             <!--end of image-->
 
@@ -95,7 +95,7 @@
         <!--content-->
         <div class="bodyTreatments__content">
             <?php
-            $pagedBodyTreatments = ( get_query_var('paged') ) ? absint(get_query_var('paged')) : 1;
+            $pagedBodyTreatments = (get_query_var('paged')) ? absint(get_query_var('paged')) : 1;
 
             $argBodyTreatments = [
                 'posts_per_page' => -1,
@@ -148,7 +148,7 @@
 
                 <ul>
                     <li>Microagulhamento</li>
-                    <li>Toxina Botulina | <img src="<?= get_template_directory_uri(); ?>/_cdn/img/img-toxina-botulina.png" alt="Tratamento Toxina Botulina Cozumel"/></li>
+                    <li>Toxina Botulina | <img src="<?= get_template_directory_uri(); ?>/_cdn/img/img-toxina-botulina.png" alt="Tratamento Toxina Botulina Cozumel" /></li>
                     <li>Intradermoterapia Corporal, Facial e Capilar</li>
                     <li>Peelings Químicos</li>
                     <li>Fios de Sustentação</li>
@@ -161,7 +161,7 @@
 
             <!--image-->
             <div class="medicalArea__content__image">
-                <img src="<?= get_template_directory_uri(); ?>/_cdn/img/img-area-medica.png" alt="Procedimentos Invasivos Cozumel"/>
+                <img src="<?= get_template_directory_uri(); ?>/_cdn/img/img-area-medica.png" alt="Procedimentos Invasivos Cozumel" />
             </div>
             <!--end of image-->
 
@@ -186,7 +186,7 @@
         <!--content-->
         <div class="facialTreatments__content">
             <?php
-            $pagedFacialTreatments = ( get_query_var('paged') ) ? absint(get_query_var('paged')) : 1;
+            $pagedFacialTreatments = (get_query_var('paged')) ? absint(get_query_var('paged')) : 1;
 
             $argFacialTreatments = [
                 'posts_per_page' => -1,
@@ -230,7 +230,7 @@
         <!--content-->
         <div class="bodyMassage__content">
             <?php
-            $pagedBodyMassage = ( get_query_var('paged') ) ? absint(get_query_var('paged')) : 1;
+            $pagedBodyMassage = (get_query_var('paged')) ? absint(get_query_var('paged')) : 1;
 
             $argBodyMassage = [
                 'posts_per_page' => -1,
@@ -275,7 +275,7 @@
         <!--content-->
         <div class="facialMassage__content">
             <?php
-            $pagedFacialMassage = ( get_query_var('paged') ) ? absint(get_query_var('paged')) : 1;
+            $pagedFacialMassage = (get_query_var('paged')) ? absint(get_query_var('paged')) : 1;
 
             $argFacialMassage = [
                 'posts_per_page' => -1,
@@ -323,7 +323,7 @@
             <!--services-->
             <div class="beautificationGaze__content__services">
                 <?php
-                $pagedBeautificationGaze = ( get_query_var('paged') ) ? absint(get_query_var('paged')) : 1;
+                $pagedBeautificationGaze = (get_query_var('paged')) ? absint(get_query_var('paged')) : 1;
 
                 $argBeautificationGaze = [
                     'posts_per_page' => -1,
@@ -351,7 +351,7 @@
 
             <!--image-->
             <div class="beautificationGaze__content__image">
-                <img src="<?= get_template_directory_uri(); ?>/_cdn/img/img-embelezamento-do-olhar.png" alt="Embelezamento do Olhar Cozumel"/>
+                <img src="<?= get_template_directory_uri(); ?>/_cdn/img/img-embelezamento-do-olhar.png" alt="Embelezamento do Olhar Cozumel" />
             </div>
             <!--end of image-->
 
@@ -378,14 +378,14 @@
 
             <!--image-->
             <div class="depilation__content__image">
-                <img src="<?= get_template_directory_uri(); ?>/_cdn/img/img-depilacao.png" alt="Depilação Cozumel"/>
+                <img src="<?= get_template_directory_uri(); ?>/_cdn/img/img-depilacao.png" alt="Depilação Cozumel" />
             </div>
             <!--end of image-->
 
             <!--services-->
             <div class="depilation__content__services">
                 <?php
-                $pagedDepilation = ( get_query_var('paged') ) ? absint(get_query_var('paged')) : 1;
+                $pagedDepilation = (get_query_var('paged')) ? absint(get_query_var('paged')) : 1;
 
                 $argDepilation = [
                     'posts_per_page' => -1,
@@ -430,13 +430,13 @@
         <!--content-->
         <div class="units__content">
             <?php
-            $pagedUnit = ( get_query_var('paged') ) ? absint(get_query_var('paged')) : 1;
+            $pagedUnit = (get_query_var('paged')) ? absint(get_query_var('paged')) : 1;
 
             $argUnit = [
                 'posts_per_page' => -1,
                 'post_type' => 'unidades',
                 'paged' => $pagedUnit,
-                'order' => "ASC"
+                'order' => "DESC"
             ];
             ?>
             <?php
@@ -520,7 +520,7 @@
 
                     <!--validation-->
                     <div class="contact__content__form__validation">
-                        <div class="g-recaptcha"  data-sitekey="6LfuUK0UAAAAAPyxhYz6GnGuEzfTKgcVVt-fb12I"></div>
+                        <div class="g-recaptcha" data-sitekey="6LfuUK0UAAAAAPyxhYz6GnGuEzfTKgcVVt-fb12I"></div>
                     </div>
                     <!--end of validation-->
 
@@ -547,7 +547,7 @@
                     <!--end of header-->
 
                     <!--content-->
-                    <div class="contact__content__information__address__content">                        
+                    <div class="contact__content__information__address__content">
                         <address>
                             <a href="https://goo.gl/maps/ZvBvXoSK7xbF5A3q7" target="blank">Rua Frei Caneca, 558 - CJ 1106 - Consolação - São Paulo</a>
                         </address>
@@ -595,13 +595,13 @@
                     <div class="contact__content__information__phones__content">
                         <address>
                             <a href="tel:1123082073" target="blank">
-                                <img src="<?= get_template_directory_uri(); ?>/_cdn/img/vt-phone.svg" alt="Telefone Cozumel Estética"/>(11) 2308-2073
+                                <img src="<?= get_template_directory_uri(); ?>/_cdn/img/vt-phone.svg" alt="Telefone Cozumel Estética" />(11) 2308-2073
                             </a>
                         </address>
 
                         <address>
                             <a href="https://api.whatsapp.com/send?l=pt_BR&phone=5511985523413" target="blank">
-                                <img src="<?= get_template_directory_uri(); ?>/_cdn/img/vt-whatsapp.svg" alt="Whatsapp Cozumel Estética"/>(11) 98552-3413
+                                <img src="<?= get_template_directory_uri(); ?>/_cdn/img/vt-whatsapp.svg" alt="Whatsapp Cozumel Estética" />(11) 98552-3413
                             </a>
                         </address>
                     </div>
@@ -624,7 +624,7 @@
 
                         <address>
                             <a href="mailto:atendimento@cozumelestetica.com.br" target="blank">
-                                <img src="<?= get_template_directory_uri(); ?>/_cdn/img/vt-mail.svg" alt="E-mail Cozumel Estética"/>atendimento@cozumelestetica.com.br
+                                <img src="<?= get_template_directory_uri(); ?>/_cdn/img/vt-mail.svg" alt="E-mail Cozumel Estética" />atendimento@cozumelestetica.com.br
                             </a>
                         </address>
 
@@ -647,13 +647,13 @@
                     <div class="contact__content__information__socialMedia__content">
                         <address>
                             <a href="tel:1123082073" target="blank">
-                                <img src="<?= get_template_directory_uri(); ?>/_cdn/img/vt-instagram.svg" alt="Instagram Cozumel Estética"/>@cozumel.estetica
+                                <img src="<?= get_template_directory_uri(); ?>/_cdn/img/vt-instagram.svg" alt="Instagram Cozumel Estética" />@cozumel.estetica
                             </a>
                         </address>
 
                         <address>
                             <a href="tel:1123082073" target="blank">
-                                <img src="<?= get_template_directory_uri(); ?>/_cdn/img/vt-facebook.svg" alt="Facebook Cozumel Estética"/>Cozumel-Estética
+                                <img src="<?= get_template_directory_uri(); ?>/_cdn/img/vt-facebook.svg" alt="Facebook Cozumel Estética" />Cozumel-Estética
                             </a>
                         </address>
                     </div>
